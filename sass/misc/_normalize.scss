@@ -1,0 +1,73 @@
+// normalización para todo el sitio
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// para calcular por 10 los em y rem
+html {
+    font-size: 62.5%;
+}
+
+// para el grid layour del sitio
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+// formato para los títulos
+.pageTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: map-get($spacings, spacing);
+    text-align: center;
+}
+
+@mixin textFormat($font-type, $font-size, $font-color) {
+    font-family: $font-type;
+    font-size: $font-size;
+    color: $font-color;
+}
+
+h1 {
+    @include textFormat(map-get($fonts, title-font), map-get($fontSizes, titles), map-get($colors, text-color));
+}
+
+h2 {
+    @include textFormat(map-get($fonts, title-font), map-get($fontSizes, subtitles), map-get($colors, text-color));
+}
+
+h3 {
+    @include textFormat(map-get($fonts, title-font), map-get($fontSizes, text-size), map-get($colors, text-color));
+}
+
+p {
+    @include textFormat(map-get($fonts, text-font), map-get($fontSizes, text-size), map-get($colors, black-text));
+}
+
+@media screen and (max-width: 820px) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr auto auto;
+        min-height: 100vh;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+}

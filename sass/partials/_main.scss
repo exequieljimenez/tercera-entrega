@@ -1,0 +1,5 @@
+// formato para main en todas las páginas
+main {
+    grid-area: main;
+    background-color: map-get($colors, base);
+}

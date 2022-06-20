@@ -1,0 +1,38 @@
+// external imports
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@500&family=Vollkorn+SC&display=swap');
+
+// maps
+@import './misc/variables';
+
+// normalize
+@import './misc/normalize';
+
+// keyframes
+@import './misc/keyframes';
+
+// header
+@import './partials/header';
+
+// main
+@import './partials/main';
+
+// aside bar
+@import './partials/aside';
+
+// footer
+@import './partials/footer';
+
+// home page
+@import './views/home';
+
+// menu page
+@import './views/menu';
+
+// nosotros page
+@import './views/nosotros';
+
+// twin peaks page
+@import './views/twin-peaks';
+
+// contacto page
+@import './views/contacto';

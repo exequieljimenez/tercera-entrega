@@ -1,0 +1,10 @@
+.menuItems {
+    display: flex;
+    gap: map-get($spacings , spacing);
+}
+
+.smallText {
+    font-size: map-get($fontSizes, smaller-text);
+    font-family: map-get($fonts, title-font);
+    margin-bottom: map-get($spacings, spacing);
+}
