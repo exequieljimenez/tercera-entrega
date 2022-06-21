@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: row;
         max-width: 1200px;
-        gap: map-get($spacings, spacing);
+        // gap: map-get($spacings, spacing);
         &--reverse {
             @extend .nameCard__each;
             flex-direction: row-reverse;
@@ -20,17 +20,17 @@
     }
 
     &__name {
-        padding: map-get($spacings, spacing);
+        // padding: map-get($spacings, spacing);
         text-align: center;
     }
 
     &__description {
-        padding: map-get($spacings, spacing);
+        // padding: map-get($spacings, spacing);
         font-weight: 300;
     }
 
     &__image {
-        padding: map-get($spacings, spacing);
+        // padding: map-get($spacings, spacing);
         border-radius: 10%;
         animation-name: materialize;
         animation-duration: 1s;
@@ -47,7 +47,7 @@
 }
 
 .quote {
-    padding: map-get($spacings, spacing);
+    // padding: map-get($spacings, spacing);
 
     p {
         padding: 0;

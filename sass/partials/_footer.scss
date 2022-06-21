@@ -5,7 +5,7 @@ footer {
     font-weight: bold;
 
     section {
-        padding: map-get($spacings, spacing);
+        // padding: map-get($spacings, spacing);
         display: flex;
         justify-content: space-between;
         align-items: center;

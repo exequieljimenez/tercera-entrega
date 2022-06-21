@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: map-get($spacings, spacing);
+    // padding: map-get($spacings, spacing);
     text-align: center;
 }
 
