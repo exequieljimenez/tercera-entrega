@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: map-get($spacings, spacing);
+    padding: map-get($spacings, spacing);
     text-align: center;
 }
 
@@ -60,7 +60,7 @@ p {
             "main"
             "aside"
             "footer";
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto 1fr auto auto;
         min-height: 100vh;
     }
